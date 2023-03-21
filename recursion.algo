@@ -1,0 +1,15 @@
+function isPalindrome(word):
+    if word.length <= 1:
+        return true
+    
+    i = 0
+    j = word.length - 1
+    
+    while i < j:
+        if word[i] == word[j]:
+            i = i + 1
+            j = j - 1
+        else:
+            return false
+    
+    return true
